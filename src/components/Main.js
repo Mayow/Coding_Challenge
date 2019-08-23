@@ -1,17 +1,28 @@
 import React from 'react';
-import { render } from 'react-dom';
 import { useState } from 'react';
 import Search from './Search'
+import StockList from './StockList.js'
+import Fetch from './Fetch'
+
 
 function Main() {
   const [search, setSearch] = useState(" ");
-  const [fetch, setFetch] = useState(" ");
+  const [stocksList, setList] = useState([]);
 
+  const addStock = text => {
+    const newStocks = [...stocksList, { text }];
+    setList(newStocks);
+  };
+  // console.log("------------------");
 
+  // console.log(stocksList);
   return (
     <div>
-      <Search search={search} setSearch={setSearch}/>
+      <Search search={search} setSearch={setSearch} addStock={addStock}/>
       
+      <StockList stocksList={stocksList}/>
+      <Fetch addStock={addStock} searchValue={search}/>
+
     </div>
   );
 
