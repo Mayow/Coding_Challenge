@@ -13,15 +13,14 @@ function Main() {
     const newStocks = [...stocksList, { text }];
     setList(newStocks);
   };
-  // console.log("------------------");
 
-  // console.log(stocksList);
+  var jsonStock=JSON.stringify(stocksList);
+  
   return (
     <div>
       <Search search={search} setSearch={setSearch} addStock={addStock}/>
       
-      <StockList stocksList={stocksList}/>
-      <Fetch addStock={addStock} searchValue={search}/>
+      <StockList stocksList={jsonStock}/>
 
     </div>
   );

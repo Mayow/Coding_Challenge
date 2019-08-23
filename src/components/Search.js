@@ -8,24 +8,53 @@ function Search({ setSearch, addStock }) {
   const handleSubmit = e => {
     e.preventDefault();
     if (!searchValue) return;
+
+    //   var key = 'G0PLT0JNFZNROQSX';
+    //   var key = 'FUVE5ASUME9WDWAU';
+      // var key = 'VR7VXUC220CPC76U';
+      var key=  '78QTKTZ9NPBJTJUS';
+    //   var key=  'P1YN9G4HHHNHBH8O';
+    //   var key=  'H4LNSYBC4JFBMA33';
+    
+      var url = `https://www.alphavantage.co/query?function=BATCH_STOCK_QUOTES&symbols=${searchValue}&apikey=${key}`;
+            //console.log(searchValue);
+      var stockValue;
+      fetch(url)
+        .then(response => response.json())
+        .then((repos) => {
+
+            var symbol=repos["Stock Quotes"][0]["1. symbol"];
+            var price= repos["Stock Quotes"][0]["2. price"];
+            var volume=repos["Stock Quotes"][0]["3. volume"];
+            var timestamp=repos["Stock Quotes"][0]["4. timestamp"];
+
+            var array_stock=[symbol,price, volume,timestamp];
+            
+            addStock(array_stock);
+            console.log("FETCH COMP  "+array_stock );
+        })
+    
+        .catch(error => console.log("ERROR ERROR ERROR ERROR"));
+    
+
     setSearch(searchValue);
-    addStock(searchValue)
+    // addStock(searchValue)
     setValue(" ");
   };
 
   return (
-    <div>
+    <div className="searchBar">
 
-      <div class="input-group md-form form-sm form-1 pl-0">
-        <div class="input-group-prepend">
-          <span class="input-group-text purple lighten-3" id="basic-text1">
-            <i class="fas fa-search text-white" aria-hidden="true"></i>
+      <div className="input-group md-form form-sm form-1 pl-0">
+        <div className="input-group-prepend" >
+          <span className="input-group-text purple lighten-3" id="basic-text1">
+            <i className="fas fa-search text-white" aria-hidden="true"></i>
             search
-    </span>
+          </span>
         </div>
 
         <form onSubmit={handleSubmit}>
-          <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search"
+          <input className="form-control my-0 py-1 searchInput" type="text" placeholder="Search" aria-label="Search"
             type="text"
             value={searchValue}
             onChange={e => setValue(e.target.value)}
