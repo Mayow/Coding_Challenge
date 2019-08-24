@@ -4,21 +4,21 @@ import '../App.css';
 
 function StockItem({ stock }) {
 
+  
 
+  console.log('UUUUUUU ' + stock );
 
-  console.log(stock);
   return (
     <div className=" d-inline-block">
       <div className="card stockCard" >
         <div className="card-body">
-          <h5 className="card-title"> abc</h5>
-          <p className="card-text"> abc    </p>
-          <p className="card-text"> abc  </p>
-          <p className="card-text"> abc </p>
+          <h6 className="card-title"> Name: {stock[0]} </h6>
+          <p className="card-text">Price:  {stock[1]} </p>
+          <p className="card-text">Volume: {stock[2]} </p>
+          <p className="card-text">Timestamp:  {stock[3]} </p>
         </div>
       </div> 
      
-      {/* <div> {stock.text}</div> */}
 
     </div>
   );

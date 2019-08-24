@@ -11,10 +11,9 @@ console.log("stocksList "+ stocksList);
       
     <div className="cardDisplyFlex">
 
-        for( int )
-        {/* {stocksList.map((stock, index) => (
+        {stocksList.map((stock, index) => (
             <StockItem stock={stock} key={index}/>
-        ))} */}
+        ))}
     </div>
   );
 }

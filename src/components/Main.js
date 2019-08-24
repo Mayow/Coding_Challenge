@@ -14,13 +14,20 @@ function Main() {
     setList(newStocks);
   };
 
-  var jsonStock=JSON.stringify(stocksList);
+  var stockArray=[];
+  
+  stocksList.forEach(function(element) {
+
+    stockArray.push(element["text"]);
+    // console.log(element["text"]);
+
+  });
   
   return (
     <div>
       <Search search={search} setSearch={setSearch} addStock={addStock}/>
       
-      <StockList stocksList={jsonStock}/>
+      <StockList stocksList={stockArray}/>
 
     </div>
   );

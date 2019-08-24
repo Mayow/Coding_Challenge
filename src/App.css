@@ -1,12 +1,10 @@
 .App {
   text-align: center;
-
 }
 
-
 html{
-  background-color:  pink;
- 
+  background-color:  #C4F3EF;
+
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -16,7 +14,7 @@ html{
 
 .App-header {
   /* background-color:  #F3FFFF; */
-  background-color:  pink;
+  background-color:  #C4F3EF;
 
   min-height: 100vh;
   display: flex;
@@ -63,6 +61,10 @@ html{
 .card{
   margin-bottom: 30px;
   margin-right:20px;
-  background-color:  white !important;
+  background-color:  white!important;
 
+}
+
+p{
+  font-size: 17px;
 }
