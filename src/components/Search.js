@@ -9,6 +9,8 @@ function Search({ setSearch, addStock }) {
     e.preventDefault();
     if (!searchValue) return;
 
+    //There is a limit to the api requests I got mulitiple API keys, if one isnt working, choose another one
+
     //   var key = 'G0PLT0JNFZNROQSX';
     //   var key = 'FUVE5ASUME9WDWAU';
       // var key = 'VR7VXUC220CPC76U';
@@ -31,14 +33,11 @@ function Search({ setSearch, addStock }) {
             var array_stock=[symbol,price, volume,timestamp];
             
             addStock(array_stock);
-            console.log("FETCH COMP  "+array_stock );
         })
     
         .catch(error => console.log("ERROR ERROR ERROR ERROR"));
     
-
     setSearch(searchValue);
-    // addStock(searchValue)
     setValue(" ");
   };
 

@@ -17,16 +17,12 @@ function Main() {
   var stockArray=[];
   
   stocksList.forEach(function(element) {
-
     stockArray.push(element["text"]);
-    // console.log(element["text"]);
-
   });
   
   return (
     <div>
       <Search search={search} setSearch={setSearch} addStock={addStock}/>
-      
       <StockList stocksList={stockArray}/>
 
     </div>

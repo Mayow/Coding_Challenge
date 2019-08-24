@@ -4,9 +4,6 @@ import '../App.css';
 
 function StockItem({ stock }) {
 
-  
-
-  console.log('UUUUUUU ' + stock );
 
   return (
     <div className=" d-inline-block">
