@@ -6,6 +6,11 @@ html{
   background-color:  #C4F3EF;
 
 }
+
+p{
+  font-size: 17px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -37,11 +42,7 @@ html{
     transform: rotate(360deg);
   }
 }
-.stockCard{
-  width: 18 rem;
-  width: 250px;
-  color:black;
-}
+
 
 .searchBar{
   margin-top: -300px;
@@ -54,17 +55,22 @@ html{
 
 .cardDisplyFlex{
   position: absolute;
-  margin-left: -150px; 
-  margin-right: 15px;
+  /* margin-left: -150px; 
+  margin-right: 15px; */
+
+  margin: 0 auto;
  
 }
+
 .card{
   margin-bottom: 30px;
   margin-right:20px;
   background-color:  white!important;
 
 }
-
-p{
-  font-size: 17px;
+.stockCard{
+  width: 18 rem;
+  width: 250px;
+  color:black;
 }
+

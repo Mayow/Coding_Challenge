@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import Search from './Search'
 import StockList from './StockList.js'
-import Fetch from './Fetch'
 
 
 function Main() {
