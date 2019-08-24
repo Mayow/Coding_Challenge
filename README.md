@@ -1,5 +1,5 @@
 Creating a React Application that utilizes the Alpha Vantage API. 
-Allows users to search for prices in the stock market and Physical and Digital/Crypto Currencies.
+Allows users to search for prices in the stock market.
 
 There is a API call limit stated as the following
 
