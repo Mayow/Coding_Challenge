@@ -13,8 +13,8 @@ function Search({ setSearch, addStock }) {
 
     //   var key = 'G0PLT0JNFZNROQSX';
     //   var key = 'FUVE5ASUME9WDWAU';
-      // var key = 'VR7VXUC220CPC76U';
-      var key=  '78QTKTZ9NPBJTJUS';
+      var key = 'VR7VXUC220CPC76U';
+      // var key=  '78QTKTZ9NPBJTJUS';
     //   var key=  'P1YN9G4HHHNHBH8O';
     //   var key=  'H4LNSYBC4JFBMA33';
     
