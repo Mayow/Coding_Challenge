@@ -21,6 +21,7 @@ function Main() {
   
   return (
     <div>
+      <h1> Stock Data Application</h1>
       <Search search={search} setSearch={setSearch} addStock={addStock}/>
       <StockList stocksList={stockArray}/>
 

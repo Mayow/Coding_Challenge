@@ -3,11 +3,15 @@
 }
 
 html{
-  background-color:  #C4F3EF;
+  background-color:  #9ec5ff;
 }
 
 p{
   font-size: 17px;
+}
+
+h1{
+  margin-top: 27px !important;
 }
 
 .App-logo {
@@ -17,7 +21,7 @@ p{
 }
 
 .App-header {
-  background-color:  #C4F3EF;
+  background-color:  #9ec5ff;
 }
 
 .App-link {
@@ -70,7 +74,7 @@ p{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #FBFBFB;
+  background-color: #f0f0f0;
 } 
 
 @media only screen and (max-width: 776px) {
@@ -80,10 +84,7 @@ p{
     margin-bottom: 20px;
   }
 
-  *{
-    background-color:  pink;
-  
-  }
+
   .cardDisplyFlex{
     margin-left:-11px;
   }

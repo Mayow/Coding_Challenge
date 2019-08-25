@@ -10,7 +10,7 @@ function StockItem({ stock }) {
         <h6> Name: {stock[0]} </h6>
         <p>Price:  {stock[1]} </p>
         <p>Volume: {stock[2]} </p>
-        <p style={{ fontSize: "14px"}}>Timestamp: {stock[3]} </p>
+        <p style={{ fontSize: "13px"}}>Timestamp: {stock[3]} </p>
       </div>
     </div>
 
