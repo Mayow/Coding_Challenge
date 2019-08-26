@@ -12,9 +12,9 @@ function Search({ setSearch, addStock }) {
     //There is a limit to the api requests I got mulitiple API keys, if one isnt working, choose another one
 
     //   var key = 'G0PLT0JNFZNROQSX';
-    // var key = 'FUVE5ASUME9WDWAU';
+    var key = 'FUVE5ASUME9WDWAU';
     // var key = 'VR7VXUC220CPC76U';
-    var key = '78QTKTZ9NPBJTJUS';
+    // var key = '78QTKTZ9NPBJTJUS';
     // var key=  'P1YN9G4HHHNHBH8O';
     // var key=  'H4LNSYBC4JFBMA33';
 
@@ -35,9 +35,8 @@ function Search({ setSearch, addStock }) {
 
       .catch(error => console.log("ERROR ERROR ERROR ERROR"));
 
-
     setSearch(searchValue);
-    setValue(" ");
+    setValue("");
   };
 
   return (
