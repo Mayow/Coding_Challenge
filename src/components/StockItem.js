@@ -3,7 +3,6 @@ import '../App.css';
 
 function StockItem({ stock, stocksList, setList, index,removeStock }) {
 
-  
   return (
     <div className="column">
       <div className="stockCard">
